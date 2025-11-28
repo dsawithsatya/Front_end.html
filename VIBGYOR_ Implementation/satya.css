@@ -1,0 +1,60 @@
+h1{
+    text-align: center ;
+    color: black ;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+td{
+    height: 400px;
+    width: 150px;
+    
+    border-right: 20px solid white;
+
+}
+
+#one{
+    background: violet;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#two{
+    background: indigo;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#three{
+    background: blue;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#four
+{
+    background: green;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#five{
+    background: yellow;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#six{
+    background: orange;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+#seven{
+    background: red;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
