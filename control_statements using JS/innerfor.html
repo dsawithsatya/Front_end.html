@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Inner For loop</title>
+</head>
+<body>
+    <center><h1>Inner for loops in Javascript</h1></center>
+    <script>
+
+        document.write("<h1>The elements present in an array </h1>")
+
+        var x=[[1,2,3],[4,5,6],[7,8,9]]
+        for(i of x){
+            document.write(i)
+            for (j of i){
+                document.write("<center>"+j+"</center>")
+                document.write("<br>")
+            }
+        }
+    </script>
+    
+</body>
+</html>

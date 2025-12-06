@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book_Management_Store</title>
+    <link rel="Icon" href="https://cdn.pixabay.com/photo/2016/09/16/09/20/books-1673578_1280.png">
+</head>
+<body>
+    <h1 style="color: blue;"><center>Book_Management_Store</center></h1>
+    <script>
+        var books=["satya_motivation",'siva_solutions',"kaja_expertise"]
+        var input=prompt("Enter your choice [1.insert/2.delete/3.list/4.exit]")
+        while(input!='exit'){
+            if(input=='insert'){
+                
+                addBook()
+            }
+            else if(input=='del'){
+                deleteBook()
+            }
+            else if(input=='list'){
+                listofBooks()
+            }
+            else{
+                prompt("Please enter valid option ")
+            }
+            input=prompt("Enter your choice [1.insert/2.delete/3.list/4.exit]")
+        }
+        console.log("Thanks for using the books_store")
+        function addBook(){
+            var y=prompt("Enter your new book name")
+            books.push(y)
+
+
+        }
+        function deleteBook(){
+            var x=prompt("Enter the book to be delete")
+                if (x in books){
+                    books.splice(books.indexof(x),1)
+                    prompt("The")
+                    document.write("The deleted book is "+x)
+                }
+                else{
+                    console.log("Please enter valid book name ")
+                }
+
+        }
+        function listofBooks(){
+            document.write("The books are available ")
+            document.write("<hr>")
+            for(i of books){
+                alert("The book available are : "+i)
+                document.write(i)
+                document.write("<br>")
+                
+                
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
