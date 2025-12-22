@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPL_concepts</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <center>OOPL_Concepts</center>
+        </legend>
+        <center><h1>THis is the oopl concepts with class and object creation</h1></center>
+        <center><h1>We have two types of methods Static and Non-static and constructor like parameter and non-parameter</h1></center>
+    </fieldset>
+
+    <script>
+        <!-- document.write("<center><h1>This is the non-parameter constructor declaration <h1></center>") -->
+        document.write("<br>")
+        class x{
+            constructor(){
+                document.write("<br>")
+                document.write("<br>")
+                
+                document.write("<center><h1>This is the non-parameterized constructor with code</h1></center>")
+                document.write("<br>")
+                document.write("<div><center><h3><p>class x<br>{<br>constructor(){<br>document.write('This is non-parameterized contructor')<br>}<br>}<br>var a=new x()</p><h3></center></div>")
+
+            }
+        }
+        var c1=new x()
+
+        class y{
+            constructor(a,b){
+                this.a=a
+                this.b=b
+                document.write("<hr>")
+                document.write("<br>")
+                document.write("<br>")
+                
+                document.write("<center><h1>This is the parameterized constructor with class</h1></center>")
+                document.write("<br>")
+                 document.write("<div><center><h3><p>class x<br>{<br>constructor(a,b){<br>document.write('This is parameterized contructor')<br>}<br>}<br>var c=new x()<br>document.write(c.a)<br>document.write(c.b)</p></h3></center></div>")
+
+
+            }
+        }
+        var c2=new y(10,20)
+        document.write("<center><h3>The first element is "+c2.a+"</h3></center>")
+        document.write("<center><h3>This is the secend element is "+c2.b+"<h3></center>")
+            document.write("<br>")
+            document.write("<br>")
+
+    document.write("<h1>Let us move with static and Non-static methods/functions<h1>")
+        class a{
+            static m1(){
+                document.write("<hr>")
+                document.write("<br>")
+                document.write("<br>")
+                
+                document.write("<center>This is the static method using static keyword we can call this method using class name</center> ")
+                document.write("<br>")
+                 document.write("<div><center><h3><p>class y<br>{<br>static m1(){<br>document.write('This is static method')<br>}<br>}<br>var d=new y()<br>y.m1()</p></h3></center></div>")
+
+                
+            }
+        }
+        var c3=new a()
+        a.m1()
+
+        class g{
+            m2(){
+                document.write("<hr>")
+                document.write("<br>")
+                document.write("<br>")
+                document.write("<center>This is the non-static method with the help of object reference we can call the method/function </center>")
+                document.write("<br>")
+                 document.write("<div><center><h3><p>class y<br>{<br> m2(){<br>document.write('This is static method')<br>}<br>}<br>var d=new y()<br>d.m2()</p></h3></center></div>")
+
+                document.write("<hr>")
+
+            }
+        }
+        var c4=new g()
+        c4.m2()
+
+
+
+
+    </script>
+
+    <br>
+    <br>
+    <br><center>
+        <h1>
+            This is the static method inside the constructor
+        </h1>
+    </center>
+    <h1></h1>
+    
+</body>
+</html>

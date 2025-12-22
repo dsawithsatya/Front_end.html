@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOB_NUMBER</title>
+
+</head>
+<body style="background-image:url(s1.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;">
+    <center >
+        <h1 style="margin: 100px;" ><input type="submit" value="Please click to add mobile number"     onclick="a()"></h1>
+    </center>
+    <SCRIPT style="border-color: red;">
+        function a(){
+            var x=prompt("Please enter the number ")
+            <!-- document.write("<center><h1>"+"The mobile number is : ",x+"</h1></center>") -->
+            x1=x.match(/[+]{1}[9]{1}[1]{1}[6-9][0-9]{9}/g)
+            if(x1!=null){
+                document.write("<br><br><br><br><center><h1>"+"You have entered the Indian Mob. Number :",x+"</h1></center>")
+            }
+        
+        }
+        
+
+    </SCRIPT>
+    
+</body>
+</html>

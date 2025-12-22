@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises_using_HTML</title>
+
+</head>
+<body>
+    <center>
+        <h1>This is promises function using JS</h1>
+    
+    <script>
+        var x=new Promise(function(resolve,reject){
+            if(true){
+                resolve("The expected output is successfull")
+            }
+            else{
+                reject("The expected output is not successfully")
+            }
+            })
+            x.then(function(x1){document.write("The issue is "+x1)}).catch(function(x2){document.write("The issue is "+x1)})
+    </script>
+    </center>
+    <br>
+    <br>
+    <br>
+    
+    <center>
+        <h1>This is the second promise function using JS</h1>
+        <script>
+            var y=new Promise(function x(resolve,reject){
+                if(true){
+                    resolve("It is ok with the execution")
+                }
+                else{
+                    reject("sorry the promise is rejected")
+                }
+            })
+            y.then(function(x1){document.write("The execution is : "+x1)}).catch(function(x2){document.write("The execution is : "+x2)})
+        </script>
+    </center>
+</body>
+</html>

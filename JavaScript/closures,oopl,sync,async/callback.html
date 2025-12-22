@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback()</title>
+</head>
+<body>
+    <center>
+        <h1>This is the Callback() function to perform the tasks using synchronization</h1>
+        <br><br>
+        <script>
+            function x(rollback){
+                rollback(document.write("<h3>This is roll back function<h3>"))
+
+            }
+            function y(){
+                document.write("<br>")
+                document.write("<h3>This is normal funtion<h3>")
+            }
+            x(y)
+        </script>
+    </center>
+
+    <br><br><br>
+    <center>
+        <h1>This is the Callback() function to perform the tasks using Asynchronization</h1>
+        <br><br>
+        <script>
+            function x(){
+                document.write("<h3>This is roll back function<h3>")
+
+            }
+            function y(){
+                document.write("<br>")
+                document.write("<h3>This is normal funtion<h3>")
+            }
+            setTimeout(x,5000)
+            y()
+        </script>
+    </center>
+    
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High order functions</title>
+</head>
+<body style="padding:100px;">
+    <center>
+        <div>
+    <h1>This the High order function with filter() function </h1>
+
+    <script>
+        const a=[101,102,103,104]
+        document.write("The list elements we have to perform the high order function "+a)
+        const b=a.filter(function(x1){if(x1%2==0){return true}})
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the filtered elements after performing filter function  "+"<h4>"+b+"</h4></h3>")
+    </script>
+    </div>
+</center>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h1>This the High order function with map() function </h1>
+
+    <script>
+        const c=[101,102,103,104]
+        const d=c.map(function(x1){return x1*5})
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the mapped elements after performing map function  "+"<h4>"+d+"</h4></h3>")
+    </script>
+</center>
+<br><br><br>
+<center>
+    <h1>This the High order function with redce() function </h1>
+
+    <script>
+        const e=[101,102,103,104]
+        const f=e.reduce(function(x1){return x1+=x1})
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the  elements after performing filter function  "+"<h4>"+f+"</h4></h3>")
+    </script>
+</center>
+
+<br><br><br>
+<br>
+ <center>
+        <div>
+    <h1>This the High order function with filter() function with using => function</h1>
+
+    <script>
+        const x=[101,102,103,104]
+        document.write("The list elements we have to perform the high order function using arrow function => "+a)
+        const y=x.filter(x1=>(x1%2==0))
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the filtered elements after performing filter function  "+"<h4>"+y+"</h4></h3>")
+    </script>
+    </div>
+</center>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h1>This the High order function with map() function with using => function </h1>
+
+    <script>
+        const z=[101,102,103,104]
+        const z1=z.map(x1=>(x1*5))
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the mapped elements after performing map function  "+"<h4>"+z1+"</h4></h3>")
+    </script>
+</center>
+<br><br><br>
+<center>
+    <h1>This the High order function with reduce() function with using => function </h1>
+
+    <script>
+        const u=[101,102,103,104]
+        const u1=u.reduce((y,z)=>(y+z))
+        <!-- document.write("<br>") -->
+        document.write("<h3>These are the  elements after performing filter function  "+"<h4>"+u1+"</h4></h3>")
+    </script>
+</center>
+    
+</body>
+</html>

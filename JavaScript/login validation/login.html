@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Details</title>
+
+</head>
+<body>
+    <center><tt><h1>Login details_validation</h1></tt></center>
+
+    <fieldset>
+        <legend>Login_Details</legend>
+        <center>
+                    <form action="" onsubmit="return hari()" method="post" autocomplete="off">
+        <table border="3">
+            <tr>
+                <td><label for="" >User_name</label></td>
+                <td id="X" style="display:none"></td>
+                <td><input type="text" placeholder="User_name" id="A"></td>
+                </tr>
+                <br>
+                <tr>
+                <td><label for="">Password</label></td>
+                <td><input type="password" placeholder="password" id="B"></td>
+                </tr>
+                <br>
+                <tr>
+                <td><label for="">Gender</label></td>
+                <td><input type="radio" name="gender">Male</td>
+                <td><input type="radio" name="gender">Female</td>
+                <br>
+
+            </tr>
+            <tr>
+                <td><label for="">Languages</label></td>
+                <td><input type="checkbox">Python</td>
+                <td><input type="checkbox">SQL</td>
+                <td><input type="checkbox">Javascript</td>
+
+            </tr>
+            <tr>
+                <td><label for="">Please select city</label></td>
+            <td><select name="" id="">
+                <option value="">---city---</option>
+                <option value="">ONG</option>
+                <option value="">HYD</option>
+                <option value="">BANG</option>
+                <option value="">DELHI</option>
+            </select></td>    
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+        </form>
+    </fieldset>
+    <script>
+        function hari(){
+            var x=document.getElementById("A").value
+            var y=document.getElementById("B").value
+            var res=x.match(/[A-Z]{1}[a-z]*_[0-9]*/g)
+            var res1=y.match(/[A-Z]{1}[a-z]*[@]{1}[0-9]*/g)
+            if(x=="" || x==null){
+                alert("Please enter User_name")
+                document.getElementById(x).innerHTML="Please enter the user_name"
+                return false
+            
+            }
+            else if(y=="" || y==null){
+                alert("Please enter password ")
+                return false
+            }
+            else if(res==""||res==null){
+                alert("Please enter a valid user_name ex:Anupama_1432 ")
+                return false
+            }
+            else if(res1==""||res1==null){
+                alert("Please enetr a valid password ex:Anupama@1432 ")
+                return false
+            }
+
+            }
+        
+    </script>
+    
+</body>
+</html>
